@@ -4,6 +4,10 @@ body{
     padding: 10px;
 }
 
+header{
+  font-size: 28px;
+}
+
 .score{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aqua;
@@ -68,6 +72,7 @@ h1,.form,.player{
     left:24%;
 }
 
+
 button{
     position: relative;
     background-color: rgb(31, 236, 45);
@@ -75,6 +80,11 @@ button{
     width: 130px;
     height: 2em;
     font-size: 24px;
+}
+#reset{
+  position: relative;
+  top: 1.6em;
+  background-color: rgb(31, 236, 45);
 }
 
 .dice,.play {

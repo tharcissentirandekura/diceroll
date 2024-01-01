@@ -8,14 +8,15 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="player"></header>
     <h1>Welcome user</h1>
     <form class="form">
         <input type="text" id="name" placeholder="your username"required>
         <input type="submit" id="submit" value="Submit">
     </form>
     <div class="score">
-        <h2 id="person">You: 0</h2>
-        <h2 id="computer">Computer: 0</h2>
+        <h2 id="person">you</h2><h2 class="person" id="person">0</h2>
+        <h2 id="computer">computer</h2><h2 class="computer" id="computer">0</h2>
     </div>
     <section class="player">
         <div class="dice">
@@ -33,7 +34,8 @@
 
 
     <div class="play">
-        <button onclick="start()">roll</button>
+        <button onclick="start()" id="start">roll</button>
+        <button onclick="reset()" id="reset" type="button" >reset</button>
     </div>
 
 
@@ -50,7 +52,6 @@
         }
     }
     );
-
 </script>
 </html>
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<body>
+    <h1 class="h1">0</h1>
+    <button onclick="counting()">Increment</button>
+</body>
+<script>
+    function counting(){
+        const button = document.querySelector("button");
+        // document.addEventListener("DOMContentLoaded",() =>{
+            event.preventDefault();
+            let min = 1;
+            let max = 10;
+            let counter = 0
+            button.onclick = () =>{
+            let value = document.querySelector(".h1");
+            let guess = Math.floor(Math.random() * (max - min + 1)) + min;
+            console.log("couting :",counter);
+                counter +=guess;
+                value.innerHTML = counter;
+        }
+        // });
+    }
+</script>
+</html>
