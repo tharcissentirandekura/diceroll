@@ -9,7 +9,6 @@
 </head>
 <body>
     <h1>Welcome user</h1>
-
     <form class="form">
         <input type="text" id="name" placeholder="your username"required>
         <input type="submit" id="submit" value="Submit">
@@ -44,6 +43,8 @@
         document.querySelector("form").onsubmit = function(){
             event.preventDefault();
             const name = document.querySelector("#name").value;
+            const form = document.querySelector(".form");
+            form.style.display = "none";
             let head = document.querySelector("h1");
             head.innerHTML = head.innerHTML.replace("user",name);
         }

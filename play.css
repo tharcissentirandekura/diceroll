@@ -23,6 +23,9 @@ form{
     grid-gap: 30px;
     border-radius: 10px;
 }
+.form{
+  display: block;
+}
 
 #name{
     height: 50px;
