@@ -16,7 +16,8 @@ function winner(limit,humanScore,compScore){
     let winning = document.querySelector("header");
 
     if (human.innerHTML >= limit && human.innerHTML > computer.innerHTML){
-      console.log("human wins");
+      // console.log("human wins");
+      alert("Reset");
       winning.innerHTML = "you won with score of :" + humanScore;
       computer.innerHTML = 0;
       console.log("Computer value :",computer.innerHTML);
@@ -25,7 +26,8 @@ function winner(limit,humanScore,compScore){
 
 
     }else if(computer.innerHTML >= limit && human.innerHTML < computer.innerHTML){
-      console.log("computer wins");
+      // console.log("computer wins");
+      alert("Reset");
       winning.innerHTML = "computer won with score of :" + compScore;
       human.innerHTML = 0;
       computer.innerHTML = 0;
