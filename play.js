@@ -2,7 +2,7 @@
 function refreshPage() {
   location.reload();
 }
-refreshPage();
+
 function reset(){
   const btn = document.querySelector("button#reset");
   btn.onclick = () =>{
