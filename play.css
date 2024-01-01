@@ -33,6 +33,8 @@ form{
 
 #name{
   position: relative;
+  background-color: rgb(247, 235, 235);
+  color: black;
     height: 50px;
     width: 80%;
     left: 10%;
@@ -40,10 +42,11 @@ form{
 #submit{
     position: relative;
     background-color: rgb(31, 236, 45);
-    color: rgb(3, 17, 30);
+    color:black;
     font-size: 30px;
     width: 140px;
     left:3em;
+    border-radius: 5px;
     
 }
 
@@ -168,9 +171,24 @@ button{
     h1{
       font-size: 24px;
     }
+    input,buttom{
+      font-size: 20px;
+    }
+    #submit{
+      position: relative;
+      left: 40px;
+    }
+
     .dice{
       position: relative;
       top: 60px;
       left: 16%;
+    }
+    button{
+      border-radius: 10px;
+    }
+    .play{
+      position: relative;
+      top: 25px;
     }
   }
