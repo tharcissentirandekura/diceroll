@@ -28,8 +28,10 @@ form{
 }
 
 #name{
+  position: relative;
     height: 50px;
     width: 80%;
+    left: 10%;
 }
 #submit{
     position: relative;
