@@ -17,7 +17,7 @@ function winner(limit,humanScore,compScore){
 
     if (human.innerHTML >= limit && human.innerHTML > computer.innerHTML){
       // console.log("human wins");
-      alert("Reset");
+      alert("Reset the game");
       winning.innerHTML = "you won with score of :" + humanScore;
       computer.innerHTML = 0;
       console.log("Computer value :",computer.innerHTML);
@@ -61,9 +61,9 @@ function winner(limit,humanScore,compScore){
   counter += guess;
   console.log("value is :",guess,": and now total is :",counter);
   value.innerHTML = counter;
-  winner(20,counter,comp);
+  winner(50,counter,comp);
   valuecomp.innerHTML = comp;
-  winner(20,counter,comp);
+  winner(50,counter,comp);
 
   let id = "#dot";
   let Elementid = [];
