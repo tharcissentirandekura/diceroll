@@ -1,0 +1,140 @@
+body{
+    background-color:rgb(7, 7, 76);
+    color: white;
+    padding: 10px;
+}
+
+.score{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+}
+
+#computer{
+    float: right;
+    margin-right: 10%;
+}
+#person{
+    float: left;
+    margin-left: 10%;
+}
+
+form{
+    display: grid;
+    grid-gap: 30px;
+    border-radius: 10px;
+}
+
+#name{
+    height: 50px;
+}
+#submit{
+    position: relative;
+    background-color: rgb(31, 236, 45);
+    color: rgb(3, 17, 30);
+    font-size: 30px;
+    width: 140px;
+    left:3em;
+    
+}
+
+h1{
+    color: coral;
+    font-size: 50px;
+}
+
+
+input,buttom{
+    font-size: 30px;
+}
+h1,.form,.player{
+    position:relative;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dice{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(236, 15, 15);
+    border: 1px solid black;
+    border-radius: 7px;
+    left:24%;
+}
+
+button{
+    position: relative;
+    background-color: rgb(31, 236, 45);
+    top: 50px;
+    width: 130px;
+    height: 2em;
+    font-size: 24px;
+}
+
+.dice,.play {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-gap: 30px;
+    top:6em;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    
+  }
+  
+  #dot1 {
+    display: block;
+    top: 10px;
+    left: 10px;
+  }
+  
+  #dot2 {
+    display: block;
+    top: 10px;
+    right: 20px;
+  }
+  
+  #dot3 {
+    display: block;
+    top: 45px;
+    left: 45px;
+  }
+  
+  #dot4 {
+    display: block;
+    top: 10px;
+    left: 45px;
+  }
+  
+  #dot5 {
+    display: block;
+    top: 45px;
+    left: 10px;
+  }
+  
+  #dot6 {
+    display: block;
+    top: 45px;
+    right: 20px;
+  }
+  #dot7 {
+    display: block;
+    top: 80px;
+    right: 20px;
+  }
+  #dot8 {
+    display: block;
+    top: 80px;
+    left: 10px;
+  }
+  #dot9 {
+    display: block;
+    top: 80px;
+    left: 45px;
+  }

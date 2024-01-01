@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="play.css">
+    <script src="play.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome user</h1>
+
+    <form class="form">
+        <input type="text" id="name" placeholder="your username"required>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    <div class="score">
+        <h2 id="person">You: 0</h2>
+        <h2 id="computer">Computer: 0</h2>
+    </div>
+    <section class="player">
+        <div class="dice">
+            <span class="dot" id="dot1"></span>
+            <span class="dot" id="dot2"></span>
+            <span class="dot" id="dot3"></span>
+            <span class="dot" id="dot4"></span>
+            <span class="dot" id="dot5"></span>
+            <span class="dot" id="dot6"></span>
+            <span class="dot" id="dot7"></span>
+            <span class="dot" id="dot8"></span>
+            <span class="dot" id="dot9"></span>
+        </div>
+    </section>
+
+
+    <div class="play">
+        <button onclick="start()">roll</button>
+    </div>
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded",function(){
+        document.querySelector("form").onsubmit = function(){
+            event.preventDefault();
+            const name = document.querySelector("#name").value;
+            let head = document.querySelector("h1");
+            head.innerHTML = head.innerHTML.replace("user",name);
+        }
+    }
+    );
+
+</script>
+</html>
+
+
+
+
